@@ -1,2 +1,4 @@
-var age = prompt("How old are you?")
-alert(age " years is roughly " age * 365 " days.")
+var age = prompt("How old are you?");
+var days = age * 365;
+
+alert(age + " years is roughly " + days + "days.")
