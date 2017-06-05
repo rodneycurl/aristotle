@@ -20,9 +20,12 @@ for(var i = 300; i <= 333; i++) {
   console.log(i)
   }
 }
+
 // Print all numbers divisible by 5 AND 3 between 5 and 50
 console.log("PRINT ALL NUMBERS DIVISIBLE BY 5 AND 3 between 5 and 50")
 
 for(var i = 5; i <= 50; i++) {
-  console.log(i)
+  if(i % 5 === 0 && i % 3 === 0){
+  console.log(i);
+  }
 }
