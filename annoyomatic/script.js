@@ -1,7 +1,17 @@
+// var answer = prompt("are we there yet?");
+//
+// while(answer !== "yes" answer !=="yeah") {
+//   var answer = prompt("are we there yet?");
+// }
+//
+// alert("Yay, We Made It!");
+
+// VERSION 2
+
 var answer = prompt("are we there yet?");
 
-while(answer !== "yes" answer !=="yeah") {
+while(answer.indexOf("yes") === -1) {
   var answer = prompt("are we there yet?");
 }
 
-alert("Yay, We Made It!");
+alert("Yay, We Made It!!!");
