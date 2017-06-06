@@ -19,3 +19,8 @@ function isEven(num){
 }
 
 // 2. factorial() FUNCTION
+function factorial(num){
+  //
+}
+
+// factorial(4) 4 x 3 x 2 x 1
