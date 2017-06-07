@@ -1,6 +1,4 @@
-//write a function isEven() which takes a single numeric argument and returns true if the number is even, and false otherwise
-
-//2. isEven
+//1. isEven function
 
 // function isEven(num){
 //   //return true if even
@@ -12,7 +10,20 @@
 //     return false
 //   }
 
-//2. isEven refactored
+//1.2 isEven function refactored
 function isEven(num){
     return num % 2 === 0;
   }
+
+//2. Factorial
+function factorial(num){
+  //define a result variable
+  var result = 1;
+  //calculate factorial and store value in result
+  for(var i = 2; i <= num; i++){
+    result = result * i;
+  }
+  //return the result variable
+}
+
+// factorial(4) 4 x 3 x 2 x 1
