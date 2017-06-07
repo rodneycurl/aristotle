@@ -30,3 +30,9 @@ function factorial(num){
 // factorial(4) 4 x 3 x 2 x 1
 
 //3. kebabToSnake()
+function kebabToSnake(str) {
+  //replace all '-' with '_'s
+  var newStr = str.replace(/-/g , "_")
+  //return str
+  return newStr;
+}
