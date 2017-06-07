@@ -1,4 +1,4 @@
-//1. isEven function
+//1. isEven() function
 
 // function isEven(num){
 //   //return true if even
@@ -10,12 +10,12 @@
 //     return false
 //   }
 
-//1.2 isEven function refactored
+//1.2 isEven() function refactored
 function isEven(num){
     return num % 2 === 0;
   }
 
-//2. Factorial
+//2. factorial() function
 function factorial(num){
   //define a result variable
   var result = 1;
@@ -28,3 +28,5 @@ function factorial(num){
 }
 
 // factorial(4) 4 x 3 x 2 x 1
+
+//3. kebabToSnake()
