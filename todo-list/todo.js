@@ -10,19 +10,10 @@ while(input !== "quit"){
     listTodos();
   } else if(input === "new") {
     //ask user for new todos
-    var newTodo = prompt("Enter new todo");
-    //add to todos array
-    todos.push(newTodo);
-    console.log("Added Todo");
+    addTodo();
   } else if(input === "delete"){
-    //ask for index of todo to be deleted
-    var index = prompt("Enter index of todo to delete");
-    //delete that todo
-    //splice()
-    todos.splice(index,1);
-    console.log("Deleted Todo");
+    deleteTodo();
   }
-
   //ask again for new input
   input = prompt("What would you like to do?");
 }
@@ -34,6 +25,22 @@ function listTodos(){
     console.log(i + ": " + todo);
   });
   console.log("**********")
+}
+
+function addTodo(){
+  var newTodo = prompt("Enter new todo");
+  //add to todos array
+  todos.push(newTodo);
+  console.log("Added Todo");
+}
+
+function deleteTodo(){
+  //ask for index of todo to be deleted
+  var index = prompt("Enter index of todo to delete");
+  //delete that todo
+  //splice()
+  todos.splice(index,1);
+  console.log("Deleted Todo");
 }
 
 //learned to build a simple todo list using javascript
