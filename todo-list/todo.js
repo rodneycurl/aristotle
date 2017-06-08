@@ -21,4 +21,4 @@ console.log("OK, YOU QUIT THE APP");
 
 //learned to build a simple todo list using javascript
 
-// push, pop, shift, unshift
+// how to add/sort content in an array: push, pop, shift, unshift, slice
