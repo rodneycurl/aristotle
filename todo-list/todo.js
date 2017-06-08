@@ -18,3 +18,7 @@ while(input !== "quit"){
   input = prompt("What would you like to do?");
 }
 console.log("OK, YOU QUIT THE APP");
+
+//learned to build a simple todo list using javascript
+
+// push, pop, shift, unshift
