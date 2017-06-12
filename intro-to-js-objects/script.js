@@ -27,22 +27,22 @@ var movie = [
   {
     title: "Friday",
     rating: "5 stars",
-    hasWatched: "You have watched "
+    hasWatched: "true"
   },
   {
     title: "Next Friday",
     rating: "4.5 stars",
-    hasWatched: "You have watched "
+    hasWatched: "true"
   },
   {
     title: "Friday After Next",
     rating: "3.5 stars",
-    hasWatched: "You have watched "
+    hasWatched: "true"
   },
   {
     title: "Are We There Yet 5",
     rating: "1.2 stars",
-    hasWatched: "You have not seen "
+    hasWatched: "false"
   }
 ]
 movie.forEach(function(movie){
