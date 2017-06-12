@@ -21,7 +21,7 @@ var post = [
   }
 ]
 
-//example of array of post (nested) using movieDB
+//example of array of movie objects (nested) using movieDB
 
 var movie = [
   {
