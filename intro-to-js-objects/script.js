@@ -12,10 +12,11 @@ var post = [
   {
     title: "NBA Finals",
     author: "Stephen A. Smith"
-    comments: []
+    comments: ["Awesome post", "terrible post"]
   },
   {
     title: "The Cavs In 7"
     author: "Skip A. Bayless"
+    comments: ["<3", "Whattttt????"]
   }
 ]
