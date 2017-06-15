@@ -37,3 +37,5 @@ while(counter <= 50) {
   }
   counter+=1;
 }
+
+//reviewing while loops 6/15/17
