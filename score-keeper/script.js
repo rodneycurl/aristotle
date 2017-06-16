@@ -13,6 +13,7 @@ var winningScore = 5;
 p1Button.addEventListener("click", function(){
   if(!gameOver){
     p1Score++;
+    console.log(p1Score, winningScore);
     if(p1Score === winningScore){
       p1Display.classList.add("winner");
       gameOver = true;
@@ -33,6 +34,10 @@ p2Button.addEventListener("click", function (){
 });
 
 resetButton.addEventListener("click", function(){
+  reset();
+});
+
+function reset(){
   p1Score = 0;
   p2Score = 0;
   p1Display.textContent = 0;
@@ -40,8 +45,10 @@ resetButton.addEventListener("click", function(){
   p1Display.classList.remove("winner");
   p2Display.classList.remove("winner");
   gameOver = false;
-});
+}
 
 numInput.addEventListener("change", function (){
   winningScoreDisplay.textContent = numInput.value
+  winningScore = Number(numInput.value);
+  reset();
 });
