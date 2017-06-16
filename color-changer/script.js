@@ -1,5 +1,5 @@
-console.log("It's workinggggg!!!")
+var button = document.querySelector("button");
 
 button.addEventListener("click", function (){
-  button.background.style = "purple";
+  document.body.style.background = "purple";
 });
