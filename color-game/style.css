@@ -1,3 +1,7 @@
+h1 {
+  color: white;
+}
+
 body {
   background-color: #232323;
 }
@@ -8,4 +12,9 @@ body {
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 600px;
 }
