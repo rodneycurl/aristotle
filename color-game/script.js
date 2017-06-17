@@ -45,6 +45,7 @@ function generateRandomColors(num){
   //repeat num times
   for(var i = 0; i < num; i++){
   //get random color and push into arr
+    arr.push(randomColor())
   }
   //return array
   return arr;
@@ -57,4 +58,6 @@ function randomColor(){
   var g = Math.floor(Math.random() * 256)
   //pick a "blue" from 0 -255
   var b = Math.floor(Math.random() * 256)
+  "rgb(r, g, b)"
+  return "rgb(" + r + "," + g + "," + b + ")";
 }
