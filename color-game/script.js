@@ -16,6 +16,7 @@ for(var i = 0; i < squares.length; i++){
     //grab color of clicked squares
     var clickedColor = this.style.backgroundColor;
     //compare color to pickColor
+    console.log(clickedColor, pickedColor);
     if(clickedColor === pickedColor){
       messageDisplay.textContent = "Correct";
       changeColors(clickedColor);
@@ -59,5 +60,5 @@ function randomColor(){
   //pick a "blue" from 0 -255
   var b = Math.floor(Math.random() * 256)
   "rgb(r, g, b)"
-  return "rgb(" + r + "," + g + "," + b + ")";
+  return "rgb(" + r + ", " + g + ", " + b + ")";
 }
