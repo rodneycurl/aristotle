@@ -28,7 +28,7 @@ button {
 
 button:hover {
   color: white;
-  background: steeblue;
+  background: steelblue;
 }
 
 .square {
@@ -41,7 +41,7 @@ button:hover {
 
 .selected {
   color: white;
-  background: steeblue;
+  background: steelblue;
 }
 
 #container {
