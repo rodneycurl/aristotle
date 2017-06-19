@@ -38,6 +38,7 @@ button:hover {
   padding-bottom: 30%;
   float: left;
   margin: 1.66%;
+  border-radius: 5%;
 }
 
 .selected {
