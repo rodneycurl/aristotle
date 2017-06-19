@@ -13,13 +13,8 @@ for(var i = 0; i < modeButtons.length; i++){
     modeButtons[0].classList.remove("selected");
     modeButtons[1].classList.remove("selected");
     this.classList.add("selected");
-    //ternary operator: this does the exact same thing as the code thats commented out below the code below.
+    //ternary operator is used on the code below think of it as an if else statement with two options
     this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
-    // if(this.textContent === "Easy"){
-    //   numSquares = 3;
-    // } else {
-    //   numSquares = 6;
-    // }
     reset();
   });
 }
