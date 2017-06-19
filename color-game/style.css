@@ -26,6 +26,11 @@ button {
   font-size: inherit;
 }
 
+button:hover {
+  color: white;
+  background: steeblue;
+}
+
 .square {
   width: 30%;
   background: purple;
@@ -35,7 +40,8 @@ button {
 }
 
 .selected {
-  background: blue;
+  color: white;
+  background: steeblue;
 }
 
 #container {
