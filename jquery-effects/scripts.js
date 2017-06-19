@@ -1,3 +1,3 @@
 $("button").on("click", function(){
-  $('div').slideUp();
+  $('div').slideToggle();
 });
