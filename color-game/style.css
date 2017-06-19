@@ -53,3 +53,8 @@ button {
 #colorDisplay {
   font-size: 200%;
 }
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
