@@ -13,8 +13,31 @@ for(var i = 0; i < modeButtons.length; i++){
     modeButtons[0].classList.remove("selected");
     modeButtons[1].classList.remove("selected");
     this.classList.add("selected");
-
+    //ternary operator: this does the exact same thing as the code thats commented out below the code below.
+    this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
+    // if(this.textContent === "Easy"){
+    //   numSquares = 3;
+    // } else {
+    //   numSquares = 6;
+    // }
+    reset();
   });
+}
+
+function reset(){
+  //generate all new colors
+  colors = generateRandomColors(numSquares);
+  //pick a new random color from array
+  pickedColor = pickColor();
+  //change colorDisplay to match picked color
+  colorDisplay.textContent = pickedColor;
+  resetButton.textContent = "New Colors";
+  messageDisplay.textContent = "";
+  //change colors of squares
+  for(var i = 0; i < squares.length; i++){
+    squares[i].style.backgroundColor = colors[i];
+  }
+  h1.style.backgroundColor = "#steelblue";
 }
 
 // easyBtn.addEventListener("click", function(){
