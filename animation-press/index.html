@@ -6,26 +6,15 @@
     <script type="text/javascript" src="paper-full.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/paperscript" canvas="myCanvas">
-    for(var x = 0; x < 1000; x+= 100){
-      for(var y = 0; y < 1000; y+= 100){
-        new Path.Circle(new Point(x, y), 10).fillColor = 'yellow';
-      }
+    function onKeyDown(event) {
+      var maxPoint = new Point(view.size.width, view.size.height);
+      console.log(maxPoint);
+
+      new Path.Circle(maxPoint, 10).fillColor = 'orange';
+      console.log(view.size.height);
+      console.log(view.size.width);
+
     }
-
-// Explanation of what the for loop is doing to X and Y.
-//     X | Y
-//     0   0
-//     0   100
-//     0   200
-//     0   300
-//     0   400
-//     0   500
-//     0   600
-//     0   700
-//     0   800
-//     0   900
-//   100   0
-
 </script>
   </head>
   <body>
