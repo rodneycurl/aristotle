@@ -24,11 +24,11 @@
 
     function onFrame(event){
       for(var i = 0; i < circles.length; i++){
-        console.log(circles[i]);
         circles[i].fillColor.hue += 1;
+        circle[i].scale(.9);
       }
       animatedCircle.fillColor.hue += 1;
-      //animatedCircle.scale(.9);
+      // animatedCircle.scale(.9);
     }
 
 </script>
