@@ -18,6 +18,24 @@ body {
   font-family: Roboto;
 }
 
+li {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666666;
+}
+
+li:nth-child(2n){
+  background: #f7f7f7;
+}
+
+input {
+  font-size: 18px;
+  background: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+}
+
 #container {
   width: 360px;
   margin: 100px auto;
