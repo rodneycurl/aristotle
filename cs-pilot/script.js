@@ -22,9 +22,11 @@ class List {
     for (var i = 0; i < this.data.length; i++) {
       newArray[i] = this.data[i];
     }
-
     //replace the reference from the old array to the new array
     this.data = newArray;
+  }
+  get(index) {
+    return this.data[index];
   }
 }
 
@@ -39,3 +41,7 @@ for (var i = 0; i < 100; i++) {
 myList.append("Yay!");
 
 console.log("Total size:", myList.size);
+for (var i = 0; i < myList.size; i++) {
+  var value = myList.get(i);
+  console.log(value, "at index", i);
+}
