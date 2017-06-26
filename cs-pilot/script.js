@@ -28,7 +28,13 @@ class List {
   }
 }
 
+  // Create the list
 var myList = new List();
+
+  // Add a bunch of stuff to it
+for (var i = 0; i < 100; i++) {
+  myList.append(i);
+}
 
 myList.append("Yay!");
 
