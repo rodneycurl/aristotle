@@ -86,7 +86,8 @@ class List {
 
     return result;
   }
-
+// Write a new method on the List class called reverse that reverses the list in place.
+// Note: Don't overwrite things and lose data while you're reversing things!
   reverse() {
     // create a copy of this list so we don't have to worry about overwriting
     // any data as things are reversed.
