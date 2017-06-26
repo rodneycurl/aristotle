@@ -75,7 +75,9 @@ class List {
   empty() {
     this.size = 0;
   }
-
+// Write a new method in the List class called copy
+// that creates a new instance of an List and returns
+// it filled with the contents of the original list
   copy() {
     var result = new List();
     for (var i = 0; i < this.size; i++) {
