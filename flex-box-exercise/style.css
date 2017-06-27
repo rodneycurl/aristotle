@@ -1,0 +1,35 @@
+
+/*makes all of the shapes remain on the same line as the flex direction*/
+/*.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+}
+
+.item {
+  color: red;
+  background-color: red;
+  border: solid 2px red;
+  width: 70%;
+  height: 70%;
+  margin: 25px 25px;
+}*/
+
+/*makes all of the content on the page responsive and stack*/
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 50px;
+}
+
+.item {
+  color: red;
+  background-color: red;
+  border: solid 2px red;
+  width: 300px;
+  height: 300px;
+  margin: 25px 25px;
+}
