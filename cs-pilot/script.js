@@ -1,3 +1,4 @@
+console.log("Creating List class.");
 class List {
   constructor(size) {
     var DEFAULT_SIZE = 10;

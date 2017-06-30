@@ -101,6 +101,9 @@ class List {
     }
   }
 
+// Write a new method on the List class called equals that accepts another list called
+// other as a parameter and returns true if the two lists contain elements in the same
+// order, otherwise it returns false
   equals(other) {
     if (this.size !== other.size) {
       return false;
