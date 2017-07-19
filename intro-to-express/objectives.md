@@ -10,3 +10,9 @@ Express is a web development framework.
 
 * Why are we using Express?
 Is the most popular node.JS framework. Also, because there is a lot of tutorials. Express is also a lightweight framework. Note: Rails is a heavyweight framework, meaning it does a lot more of the work for you up front.
+
+#Building An Express application
+
+* Review an existing app (DogDemo)
+* Review HTTP response/request lifecycle
+* Create our own simple Express app!
