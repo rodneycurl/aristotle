@@ -7,6 +7,7 @@ NPM gives us access to several libraries/packages that we can utilize to build o
 * Intro the packages we will end up using
 Express, Mongoose, Morgan, EJS, Body Parser, Cookie Parser etc.
 
+
 #Installing an Using packages
 
 * Use 'npm install' to install a package
