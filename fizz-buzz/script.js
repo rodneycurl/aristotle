@@ -4,7 +4,9 @@
   // - for multiples of five, print Buzz (instead of the number)
   // - for multiples of both three and five, print FizzBuzz (instead of the number)
 
-console.log("version 1")
+console.log("==========")
+console.log("Version 1")
+console.log("==========")
 for (let i = 1; i < 101; i++){
   if (i % 3 === 0 && i % 5 === 0){
     console.log("FizzBuzz")
@@ -20,7 +22,9 @@ for (let i = 1; i < 101; i++){
   }
 }
 
-console.log("version 2")
+console.log("==========")
+console.log("Version 2")
+console.log("==========")
 for (var i = 1; i < 101; i++){
   if(i % 3 === 0 && i % 5 === 0){
     console.log("FizzBuzz");
