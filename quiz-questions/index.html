@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <style media="screen">
+      #content div {
+        border: 1px solid #000;
+        margin: 1em 0;
+        padding: 0 0.5em 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content"></div>
+    <button id="addQuestion" type="button" name="button">Add A Question</button>
+    <script type="text/javascript">
+      let questions = [{
+          statement: "2+2?",
+          answer: "2+2 = 4"
+        }, {
+          statement: "In which year did Christopher Columbus discover America?",
+          answer: "1492"
+        }, {
+          statement:
+            "What occurs twice in a lifetime, but once in every year, twice in a week but never in a day?",
+          answer: "The E letter"
+      }, {
+        statement: "How many days in a week?",
+        answer: "7 days"
+      }];
+
+      // questions <div
+      const contentDiv = document.getElementById('content');
+
+      function showAnswer(id) {
+        return (event) => {
+          const buttonEl = event.target;
+          const parentEl = buttonEl.parentNode;
+          //remove button
+          buttonEl.remove();
+
+          // show the answer
+          // create <p>
+          const answerEl = document.createElement('p');
+          // reference the questions object with `id`
+          answerEl.innerText = questions[id].answer;
+          // append the element to the parentNode
+          parentEl.appendChild(answerEl);
+        };
+      }
+
+      document.getElementById('addQuestion').addEventListener('click', () => {
+        const statement = prompt('Add your statement:');
+        const answer = prompt('Add your answer');
+        const newQuestion = { statement, answer };
+        questions = questions.concat([newQuestion]);
+        // console.log(questions);
+        printQuestions(newQuestion, questions.length -1);
+      });
+
+      function printQuestions({ statement }, index) {
+        const questionDiv = document.createElement('div');
+        const statementEl = document.createElement('p');
+        statementEl.innerHTML = `<strong>Question ${index + 1}:</strong> <em>${statement}</em>`;
+        const buttonEl = document.createElement('button');
+        buttonEl.innerText = 'Show answer';
+        buttonEl.addEventListener('click', showAnswer(index));
+
+        // appending
+        questionDiv.appendChild(statementEl);
+        questionDiv.appendChild(buttonEl);
+        contentDiv.appendChild(questionDiv);
+      }
+
+      questions.map(printQuestions);
+    </script>
+
+  </body>
+</html>
