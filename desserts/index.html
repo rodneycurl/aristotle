@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>My favorite desserts</h1>
+
+    <ul id="desserts"
+    </ul>
+
+    <button id="addButton">Add a dessert</button>
+    <script>
+      // Keep reference to the dessert unordered list node
+      const dessertList = document.getElementById('desserts');
+
+      function addDessertItem() {
+        // initial prompt to enter new dessert item
+        const newDessert = prompt('Add a dessert item:');
+
+      // create empty <li>
+      const newDessertLi = document.createElement('li');
+      // add the new dessert text
+      newDessertLi.textContent = newDessert;
+      // attach event listener onClick of <li>
+      newDessertLi.addEventListener('click', updateDessertItem);
+      // finally append the now populated <li> to the dessertList
+      dessertList.appendChild(newDessertLi);
+    }
+
+    function updateDessertItem(event) {
+      const dessertItemElement = event.target;
+      // console.log(dessertItemElement);
+      const editDessertItem = prompt('Update dessert item:', dessertItemElement.innerText);
+
+      // null = user hit "Cancel"
+      if (editDessertItem !== null) {
+        if (!editDessertItem){
+        // empty string means deleted
+        // Todo: Figure out how to delete
+        dessertItemElement.remove();
+      } else {
+      // otherwise apply the update with string
+      dessertItemElement.innerText = editDessertItem;
+    }
+  }
+}
+
+      // onClick Event Listener for Add a Dessert
+      document.getElementById('addButton').addEventListener('click', addDessertItem);
+    </script>
+  </body>
+</html>
